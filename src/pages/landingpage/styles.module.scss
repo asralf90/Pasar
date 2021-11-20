@@ -75,7 +75,7 @@
   cursor: pointer;
   text-decoration: none;
   margin-top: 24px;
-  background-color: #1969ff;
+  background-color: #d60000;
 
   &:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -88,8 +88,8 @@
   .player {
     top: 0;
     left: 0;
-    width: 100%!important;
-    height: 580px!important;
+    width: 100% !important;
+    height: 580px !important;
   }
 }
 

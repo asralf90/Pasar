@@ -24,7 +24,7 @@ import BoostCollectionModal from 'components/BoostCollectionModal';
 import ConnectWalletModal from 'components/ConnectWalletModal';
 import Identicon from 'components/Identicon';
 
-import logoSmallBlue from 'assets/svgs/logo_small_blue.svg';
+import logoHeader from 'assets/svgs/logo_header.svg';
 import iconUser from 'assets/svgs/user.svg';
 import iconNotification from 'assets/svgs/notification.svg';
 // import iconAdd from 'assets/svgs/add.svg';
@@ -528,16 +528,23 @@ const Header = ({ border }) => {
     <div className={cx(styles.header, border && styles.hasBorder)}>
       <div className={styles.left}>
         <Link to="/" className={styles.logo}>
-          <img src={logoSmallBlue} alt="logo" />
+          <img src={logoHeader} alt="logo" />
         </Link>
         {isSearchbarShown && renderSearchBox()}
         <div className={styles.secondmenu}>
+          <NavLink
+            to="/explorer"
+            className={cx(styles.menuLink, styles.link)}
+            activeClassName={styles.active}
+          >
+            Explorer
+          </NavLink>
           <NavLink
             to="/explore"
             className={cx(styles.menuLink, styles.link)}
             activeClassName={styles.active}
           >
-            Explore
+            Marketplace
           </NavLink>
           <NavLink
             to="/create"
@@ -551,12 +558,20 @@ const Header = ({ border }) => {
       <div className={styles.menu}>
         {isSearchbarShown && renderSearchBox()}
         <NavLink
+          to="/explorer"
+          className={cx(styles.menuLink, styles.link)}
+          activeClassName={styles.active}
+          style={{ color: '#fff' }}
+        >
+          Explorer
+        </NavLink>
+        <NavLink
           to="/explore"
           className={cx(styles.menuLink, styles.link)}
           activeClassName={styles.active}
           style={{ color: '#fff' }}
         >
-          Explore
+          Marketplace
         </NavLink>
         <NavLink
           to="/create"

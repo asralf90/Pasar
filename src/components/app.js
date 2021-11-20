@@ -19,6 +19,7 @@ import NotFound from './NotFound';
 import PaintBoard from './PaintBoard';
 import LandingPage from '../pages/landingpage';
 import ExplorePage from '../pages/explorepage';
+import ExplorerPage from '../pages/explorerpage/Create';
 import AccountDetails from '../pages/AccountDetails';
 import NFTItem from '../pages/NFTItem';
 import CollectionCreate from '../pages/Collection/Create';
@@ -95,6 +96,7 @@ const App = () => {
       <Router>
         <Switch>
           <Route exact path="/" component={LandingPage} />
+          <Route exact path="/explorer" component={ExplorerPage} />
           <Route exact path="/explore" component={ExplorePage} />
           <Route path="/explore/:addr/:id" component={NFTItem} />
           <ProtectedRoute exact path="/create" component={PaintBoard} />

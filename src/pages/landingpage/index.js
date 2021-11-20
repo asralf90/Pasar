@@ -33,7 +33,7 @@ const cards = [
     icon: card2,
     title: 'Super Fast',
     description:
-      'Since Artion runs on the Fantom Opera Network, transactions are usually confirmed within 1-2 seconds.',
+      'Since Pasar runs on the Elastos Smart Chain, transactions are usually confirmed within 1-2 seconds.',
     path: '/',
   },
   {
@@ -45,9 +45,9 @@ const cards = [
   },
   {
     icon: card4,
-    title: 'Zero Platform Fees',
+    title: 'Low Platform Fees',
     description:
-      'Trade NFTs via auction or direct offer without any fees taken by Artion.',
+      'Trade NFTs via auction or direct offer without any fees taken by Pasar.',
     path: '/explore',
   },
 ];
@@ -105,15 +105,9 @@ const LandingPage = () => {
             <div
               className={styles.title}
               style={{ color: '#FFF' }}
-            >{`Trade without platform fees on Artion`}</div>
+            >{`Come and Join the Revolution`}</div>
             <div className={styles.subtitle}>
-              Artion is an NFT marketplace built on Fantom. Create and trade
-              NFTs instantly with low network costs.
-            </div>
-            <div className={styles.subtitle}>
-              <strong>
-                Warning: This is a beta version. Use at your own caution.
-              </strong>
+              Pasar is an NFT marketplace built on the Elastos Smart Chain (ESC)
             </div>
 
             <Link to="/explore" className={styles.exploreButton}>
